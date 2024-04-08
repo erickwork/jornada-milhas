@@ -1,0 +1,14 @@
+.app-footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 170px;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .icones{
+    display: flex;
+    justify-content: space-around;
+  }
+}
