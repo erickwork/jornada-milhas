@@ -1,0 +1,61 @@
+<section  class="modal">
+  <h1 mat-dialog-title>Viajante</h1>
+  <mat-dialog-content class="divisao">
+    <div class="selecao-idade">
+      <ul>
+        <li><strong>Adultos</strong></li>
+        <li>(Acima de 12 ano)</li>
+        <li>
+          <button class="decremento" (click)="decremento()" mat-mini-fab>
+            <img src="assets/icones/do_not_disturb_on.png" alt="Subtração">
+          </button>
+          <span class="adultos">{{adultos}}</span>
+          <button class="incremento" (click)="incremento()" mat-mini-fab>
+            <img src="assets/icones/add_circle.png" alt="Adição">
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="selecao-idade">
+      <ul>
+        <li><strong>Crianças</strong></li>
+        <li>(entre 2 e 11 anos)</li>
+        <li>
+          <button class="decremento" (click)="decrementoCrianca()" mat-mini-fab>
+            <img src="assets/icones/do_not_disturb_on.png" alt="Subtração">
+          </button>
+          <span class="criancas">{{criancas}}</span>
+          <button class="incremento" (click)="incrementoCrianca()" mat-mini-fab>
+            <img src="assets/icones/add_circle.png" alt="Adição">
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="selecao-idade">
+      <ul>
+        <li><strong>Bebês</strong>></li>
+        <li>(Até 2 anos)</li>
+        <li>
+          <button class="decremento" (click)="decrementoBebe()" mat-mini-fab>
+            <img src="assets/icones/do_not_disturb_on.png" alt="Subtração">
+          </button>
+          <span class="criancas">{{bebe}}</span>
+          <button class="incremento" (click)="incrementoBebe()" mat-mini-fab>
+            <img src="assets/icones/add_circle.png" alt="Adição">
+          </button>
+        </li>
+      </ul>
+    </div>
+  </mat-dialog-content>
+  <h2>Categoria</h2>
+  <mat-chip-listbox aria-label="Seleção de categoria">
+    <mat-chip-option selected>Econômica</mat-chip-option>
+    <mat-chip-option>Executiva</mat-chip-option>
+  </mat-chip-listbox>
+  <mat-dialog-actions>
+    <button class="acao" id="teste" mat-raised-button	mat-dialog-close color="primary">Cancelar</button>
+    <button class="acao" mat-raised-button	mat-dialog-close color="primary">Aplicar</button>
+  </mat-dialog-actions>
+</section>
+
+

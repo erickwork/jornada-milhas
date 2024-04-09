@@ -1,0 +1,76 @@
+.modal {
+  border: 1px solid #1D1B20;
+  width: 560px;
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: 32px;
+    padding: 12px;
+  }
+  .selecao-idade {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style-type: none;
+      margin: 0 0 0 -1em;
+      padding: 0;
+      li {
+        margin-bottom: 10px;
+        margin: 12px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #1D1B20;
+        text-align: start;
+        padding: 0;
+        span {
+          vertical-align: middle;
+          padding: 0 12px;
+        }
+      }
+    }
+  }
+  .selecao-categoria {
+    margin-top: 32px;
+    color: #1D1B20;
+  }
+  .modal-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    button {
+      margin: 0 8px;
+      width: 100%;
+    }
+  }
+}
+
+
+.decremento{
+  background-color: #1D1B201F;
+}
+.incremento{
+  background-color: #E8DEF8;
+}
+
+.divisao{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.mat-mdc-dialog-container {
+  width: 1000px;
+}
+
+.acao{
+  margin-top: 20px;
+  width: 250px;
+}
+
+#teste{
+  background-color: #E8DEF8;
+  color: black;
+}
