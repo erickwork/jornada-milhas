@@ -17,6 +17,16 @@ import { CardDepoimentosComponent } from './shared/card-depoimentos/card-depoime
 import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatIcon, MatIconModule} from "@angular/material/icon";
+import {MatInput, MatInputModule} from "@angular/material/input";
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {provideNativeDateAdapter} from '@angular/material/core';
+import { ModalComponent } from './shared/modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
+
 
 @NgModule({
   declarations: [
@@ -30,6 +40,7 @@ import { MatChipsModule } from '@angular/material/chips';
     CardBuscaComponent,
     CardDepoimentosComponent,
     FormBuscaComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,10 +49,20 @@ import { MatChipsModule } from '@angular/material/chips';
     MatButtonModule,
     MatCardModule,
     MatButtonToggleModule,
-    MatChipsModule
+    MatChipsModule,
+    MatFormFieldModule,
+    MatIcon,
+    MatInput,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatIconModule,
+    MatDialogModule
   ],
   providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideNativeDateAdapter()
   ],
   bootstrap: [AppComponent]
 })
